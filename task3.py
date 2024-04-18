@@ -2,17 +2,21 @@
 from typing import Union, Optional
 
 
-def calculator(x: Union[int | float], y: Union[int | float], z: Optional[str] = "+") -> float:
+def calculator(x: Union[int | float], y: Union[int | float], z: Optional[str] = "") -> str:
+    # if z is None:
+    #     return (f"Sum of numbers is {x + y}\nDiference of numbers is {x-y}\nMultiplying of numbers is {x*y}\n"
+    #             f"Divide of numbers is {x/y}")
     if z == "+":
-        return x + y
+        return str(x + y)
     elif z == "-":
-        return x - y
+        return str(x - y)
     elif z == "*":
-        return x * y
+        return str(x * y)
     elif z == "/":
-        return x / y
+        return str(x / y)
     else:
-        return -1
+        return (f"Sum of numbers is {x + y}\nDiference of numbers is {x - y}\nMultiplication of numbers is {x * y}\n"
+                f"Division of numbers is {x / y}")
 
 
-print(calculator(3, 12.5, "*"))
+print(calculator(3, 12.5))

@@ -1,9 +1,10 @@
 # Sukurkite funkciją, kuri grąžintų tik unikalius simbolius turinčias string reikšmes.
 from typing import List
 
-sentence = "123456 parduotuve pilis masinu telefonas aaaa b21231b"
+sentence = input("Enter text to filter words with unique characters only: ")
 
-# papildyti inputu!
+if not sentence:
+    sentence = "123456 parduotuve pilis masinu telefonas aaaa b21231b bahjs@codeacademy.lt abkjbv@gmail.com"
 
 
 def string_filter(a: str) -> bool:
@@ -22,5 +23,4 @@ def word_splitter(a: str) -> List:
     return uniques
 
 
-
-print(f"Žodžiai su unikaliais symboliais: {word_splitter(sentence)}")
+print(f"Words with unique symbols only: {word_splitter(sentence)}")

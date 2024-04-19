@@ -1,7 +1,8 @@
 # Sukurkite funkciją, kuri prie kiekvieno list nario prideda string galūnę.
+from typing import List
 
 
-def add_string_ending(input_list: list) -> list:
+def add_string_ending(input_list: list[str]) -> list[str]:
     modded_list = []
     for i in input_list:
         if i[-1] == "1":

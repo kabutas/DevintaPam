@@ -10,7 +10,7 @@ def get_odd(a: int) -> bool:
 # function to count symbols in a string
 def count_symbols(a: str) -> int:
     counter = 0
-    for i in a:
+    for _ in a:
         counter += 1
     return counter
 
@@ -31,6 +31,6 @@ def get_random_number(a: int) -> int:
 
 print(get_odd(3))
 print(count_symbols("fajkshgkjahsg asgjhajsg hajsgh"))
-print(convert_to_upper("text with uppercase"))
+print(convert_to_upper("text to uppercase"))
 print(f"20 degrees by celsius equals to {celsius_to_fahrenheit(20)} by fahrenheit")
 print(get_random_number(50))

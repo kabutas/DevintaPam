@@ -1,5 +1,5 @@
 # Sukurkite funkciją, kuri grąžintų tik unikalius simbolius turinčias string reikšmes.
-from typing import List
+
 
 sentence = input("Enter text to filter words with unique characters only: ")
 
@@ -14,7 +14,7 @@ def string_filter(a: str) -> bool:
     return True
 
 
-def word_splitter(a: str) -> List:
+def word_splitter(a: str) -> list:
     uniques = []
     splitted_words = a.split(" ")
     for i in splitted_words:
